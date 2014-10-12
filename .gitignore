@@ -183,3 +183,9 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
+# MonoDevelop
+*.userprefs
+*.usertasks
+*.pidb
+*.resources
+test-results/
