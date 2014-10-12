@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v11.0\WebApplications\Microsoft.WebApplication.targets" Condition="true" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v12.0\WebApplications\Microsoft.WebApplication.targets" Condition="true" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -128,14 +128,14 @@
     </Content>
     <Compile Include="Modules\IndexModule.fs" />
     <Compile Include="Bootstrapper.fs" />
+    <Content Include="Web.config" />
     <None Include="Web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
+      <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
+      <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="packages.config" />
-    <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
