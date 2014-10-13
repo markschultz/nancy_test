@@ -136,6 +136,11 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="packages.config" />
+    <Content Include="Content\scripts\jquery.pjax.js" />
+    <Compile Include="Modules\HomeModule.fs" />
+    <Content Include="Views\HomeIndex.html" />
+    <Content Include="Views\first.html" />
+    <Content Include="Views\second.html" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
